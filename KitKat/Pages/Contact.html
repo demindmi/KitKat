@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- ^this tells browser what type of file this is -->
+
+<html lang="en">
+  <!-- below is the 'head' of the page, it contains things like imports, declarations and title, for now dont worry much about it. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Below is the title of the page that the user will see in their TAB -->
+    <title>KitKat Website</title>
+    <!-- Below we specify which styling doc to use for this page -->
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <!-- Below we specify which script file to use for this page -->
+    <script src="../Scripts/contact.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Contact Page</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/Media.html">Media</a></li>
+          <li><a href="/">File tree</a></li>
+          <li><a href="#" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+  <section>
+    <form onsubmit="submitCalled(event)">
+      <div class="form_control">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+
+      <div class="form_control">
+        <input type="radio" name="gender" value="male" required />Male
+        <input type="radio" name="gender" value="female" />Female
+      </div>
+
+      <div class="form_control">
+        <label for="ice">Choose a flavor:</label>
+        <input list="ice-cream-flavors" id="ice" name="ice-cream-choice" />
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate"></option>
+          <option value="Coconut"></option>
+          <option value="Mint"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+      </div>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+
+    <h1>The output element</h1>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50" />
+      +<input type="number" id="b" value="25" /> =<output name="x" for="a b"></output>
+    </form>
+  </section>
+
+  <footer>
+    <p>Author: Banana Master</p>
+  </footer>
+</html>

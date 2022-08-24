@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- ^this tells browser what type of file this is -->
+
+<html lang="en">
+  <!-- below is the 'head' of the page, it contains things like imports, declarations and title, for now dont worry much about it. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Below is the title of the page that the user will see in their TAB -->
+    <title>KitKat Website</title>
+    <!-- Below we specify which styling doc to use for this page -->
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <!-- Below we specify which script file to use for this page -->
+    <script src="../Scripts/media.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Media Page</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Pages/Media.html">Media</a></li>
+          <li><a href="/">File tree</a></li>
+          <li><a href="../Pages/Contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+  <section>
+    <div>
+      <p>Audio Sample</p>
+      <!--- Audio tag has a lot of extra fields, this one I enabled controls and autoplay -->
+      <audio controls autoplay>
+        <source
+          src="https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg"
+          type="audio/ogg"
+        />
+      </audio>
+
+      <p>Video Sample</p>
+      <video width="400" controls preload>
+        <source
+          src="https://static.videezy.com/system/resources/previews/000/044/479/original/banana.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <p>Image Sample</p>
+      <img
+        src="https://i.pinimg.com/236x/4c/76/04/4c7604bbdf9b86a4444a980a051812cf--healthy-foods-healthy-eating.jpg"
+        alt="Bananas"
+        width="200"
+        height="100"
+      />
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <button type="button" id="button_id" onclick="magic()">Click me Also</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Author: Banana Master</p>
+  </footer>
+</html>
